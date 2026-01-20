@@ -1,8 +1,0 @@
-# ignore all files
-*
-
-# except these files
-!.gitignore
-!index.html
-!style.css
-!assets
