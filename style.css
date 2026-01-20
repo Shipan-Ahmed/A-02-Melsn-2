@@ -202,7 +202,7 @@
 /* about section */
 .about {
     background-color: #1A0B2E;
-    padding: 50px 200px 120px 200px;
+    padding: 3.125rem 12.5rem 7.5rem 12.5rem;
     text-align: center ;
     
 }
@@ -319,6 +319,7 @@
     gap: 1.5rem;
     background-color: #250D44;
     border-radius: 1rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .features .features-container .podcast-card .podcast-video iframe {
@@ -353,6 +354,7 @@
     align-items: center;
     background-color: #250D44;
     border-radius: 1.5rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .features .meet-section .meet-card .meet-text {
@@ -438,7 +440,7 @@ footer .footer-container .footer-list {
         right: -8%;
     }
     .about {
-        padding: 40px 20px;
+        padding: 1rem 1.25rem;
         
     }
     .section-title {
