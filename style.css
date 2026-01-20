@@ -45,7 +45,14 @@
     color: #FFFFFF;
     /* transform: scale(1.25); */
 }
-
+@keyframes myanimation {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.25);}
+    100% {transform: scale(1);}
+}
+.animation {
+    animation: myanimation 2s infinite;
+}
 
 /* common styles */
 .medium-text {
