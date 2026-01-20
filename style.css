@@ -123,15 +123,17 @@
     gap: 2.5rem;
     justify-content: center;
     align-items: center;
+    /* position:-ms-page; */
 }
 
 .banner .banner-img {
     width: 350px;
     height: 350px;
     background-image: url(./B13-A02-TechWave-main/assets/hero-circle.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    /* background-attachment: scroll; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,6 +195,11 @@
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 5rem;
+}
+.about  .horizontal-line {
+    border: 1px solid #FFFFFF;
+    /* position: center; */
+    opacity: 10%;
 }
 .about .about-statistics {
     margin-top: 5rem;
@@ -283,7 +290,7 @@
 
 .features .features-container .podcast {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 2rem;
 }
@@ -387,6 +394,8 @@ footer .footer-container .footer-list {
 }
 
 /* responsive styles */
+
+/* small device   */
 @media screen and (max-width: 576px) {
     .navbar .nav-container {
         margin: 1rem 20px;
@@ -481,10 +490,27 @@ footer .footer-container .footer-list {
 
 }
 
-/* medium device  */
+/* medum  device  */
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .navbar .nav-container {
+        margin: 1rem 4rem;
+    }
+    .navbar .nav-container .menu-icon {
+        display: none;
+    }
+    .navbar .nav-container .nav-links {
+        display: none;
+    }
+
+
+    
+}
+
+/* medium to tablate device  */
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .navbar .nav-container {
-        margin: 1rem 1.25rem;
+        margin: 1rem 2rem;
     }
     .navbar .nav-container .menu-icon {
         display: none;
@@ -566,8 +592,42 @@ footer .footer-container .footer-list {
 
 
 /* large device  */
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 993px) and (max-width: 1200px) {
     .navbar .nav-container .menu-icon  {
+            display: none;
+    }
+    .navbar .nav-container {
+        margin: 1rem 8rem;
+        
+    }
+    .choose {
+        padding: 3rem 6rem;
+    }
+        .features .features-container .podcast {
+            gap: 1.5rem;
+        }
+    .features .features-container .podcast-card {
+        width: 300px;
+        gap: 0.5rem;
+    }
+    .features .meet-section .meet-card {
+        
+        padding: 1rem;
+       
+    }
+    .features .meet-section .meet-card .meet-text {
+        max-width: 80%;
+        margin-left: 2rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+    }
+}
+
+/* extra large device  */
+@media screen  and (min-width: 1201px) {
+    .navbar .nav-container .menu-icon {
             display: none;
     }
 }
